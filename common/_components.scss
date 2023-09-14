@@ -1,0 +1,29 @@
+@import "../common/variables";
+
+.review-card{
+    background-color: $service-color;
+    border-radius: $border-radius;
+    padding: $padding-2;
+}
+
+$border-radius-map:(
+    "border-radius": $border-radius,
+    "border-radius-2": $border-radius-2,
+);
+
+@each $name, $border in $border-radius-map{
+    .#{$name} {
+        border-radius: $border;
+    }
+}
+
+$box-shadow-map:(
+    "box-shadow": $box-shadow,
+    "box-shadow-2": $box-shadow-2,
+);
+
+@each $name, $box in $box-shadow-map{
+    .#{$name} {
+        box-shadow: $box;
+    }
+}

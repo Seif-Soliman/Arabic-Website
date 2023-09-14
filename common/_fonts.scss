@@ -1,0 +1,46 @@
+@import "../common/variables";
+@font-face {
+    font-family: 'Lama_Sans';
+    src: url('../assets/LamaSans-Medium.ttf');
+}
+
+.default-font{
+    font-family: $default-font;
+}
+
+/* FONT COLORS */
+$header-color-font: #FFF;
+$title-dot: var(--rise-n-shine-600, #FEC430);
+
+
+//Sass Map to store font-size values
+$font-sizes:(
+    'font-size-16': $font-size-16,
+    'font-size-17': $font-size-17,
+    'font-size-18': $font-size-17,
+    'font-size-20': $font-size-20,
+    'font-size-24': $font-size-24,
+    'font-size-26': $font-size-26,
+    'font-size-32': $font-size-32,
+    'font-size-38': $font-size-38,
+);
+
+//@each Sass loop to generate classes
+@each $name, $font-size in $font-sizes{
+    .#{$name}{
+        font-size: $font-size;
+    }
+}
+
+//Alignment
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
+}

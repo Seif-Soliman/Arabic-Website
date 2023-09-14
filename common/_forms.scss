@@ -1,0 +1,26 @@
+@import "../common/variables";
+
+.field {
+    margin-bottom: $spacing-2;
+}
+
+.label{
+    font-family: $default-font;
+    color: $t2-color;
+    font-size: $font-size-20;
+    margin-top: $padding-1;
+    margin-bottom: $padding-1;
+}
+
+.input-style{
+    font-family: $default-font;
+    font-size: $font-size-17;
+    text-align: right;
+    border-radius: 15px;
+    border: $t2-color 1.5px solid;
+    background: $white;
+    width: 100%;
+    padding: $padding-1;
+    margin-top: $padding-2;
+    margin-bottom: $padding-2;
+}

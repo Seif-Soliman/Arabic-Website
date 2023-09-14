@@ -1,0 +1,104 @@
+header{
+    div{
+        position: relative;
+        display: flex;
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+        .navbar{
+            display: flex;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            .list{
+                width: 15%;
+            }
+            h2{
+                display: inline;
+                margin-left: 171px;
+                font-family: $default-font;
+                color: $header-color-font;
+                .yellow-dot{
+                    color: $title-dot;
+                }
+            }
+        }
+
+        .overlay{
+            position: absolute;
+            top: 20%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            
+
+            h1,h3{
+                font-family: $default-font;
+                color: $header-color-font;
+                padding: 12px;
+            }
+
+            button{
+                width: 85%;
+                margin: 0 auto;
+                justify-content: center;
+                border-radius: 15px;
+                background-color: var(--rise-n-shine-600, #FEC430);
+                box-shadow: 0px 8px 28px 0px rgba(37, 37, 37, 0.10);
+                display: flex;
+
+                .left-arrow{
+                    padding: 12px;
+                    width: 10%;
+                }
+            }
+
+            .arrow{
+                width: 40%;
+                position: absolute;
+                bottom: -130%;
+                left: 8%;
+            }
+
+            
+        }
+        .scroll-info{
+            position: absolute;
+            bottom: 25px;
+            left: 2%;
+            display: flex;
+            flex-direction: row;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                bottom: 10px;
+                left: 80%;
+                width: 80%;
+                h3{
+                    text-align: center;
+                    font-family: $default-font;
+                    color: $header-color-font;
+                }
+                .mouse{
+                    width: 70%;
+                    margin: 0 auto;
+                    padding: 5px;
+                }
+            }
+
+            
+        }
+        
+    }
+    
+    
+}
+
+@media only screen and (min-width: 64em) {
+
+}
+

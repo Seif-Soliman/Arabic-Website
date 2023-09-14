@@ -1,0 +1,48 @@
+@import "../common/variables";
+
+$spacing-map:(
+    "spacing-1": $spacing-1,
+    "spacing-2": $spacing-2,
+    "spacing-3": $spacing-3,
+    "spacing-between": $spacing-between,
+    "spacing-btw-txt": $spacing-btw-txt,
+    "padding-1": $padding-1,
+    "padding-2": $padding-2,
+    "padding-3": $padding-3
+);
+
+@each $name, $space in $spacing-map{
+    // Spacing: all
+    .#{$name} {
+        padding: $space;
+    }
+
+    // Spacing: top
+    .#{$name}-t {
+        padding-top: $space;
+    }
+
+    // Spacing: bottom
+    .#{$name}-b {
+        padding-bottom: $space;
+    }
+
+    // Spacing: right
+    .#{$name}-mr {
+        margin-right: $space;
+    }
+
+    .#{$name}-mb {
+        margin-bottom: $space;
+    }
+
+    .#{$name}-mt {
+        margin-top: $space;
+    }
+
+    // Spacing: vertical
+    .#{$name}-v {
+        padding-top: $space;
+        padding-bottom: $space;
+    }
+}

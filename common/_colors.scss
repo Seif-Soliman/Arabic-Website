@@ -1,0 +1,30 @@
+@import "../common/variables";
+
+//Sass Map to store color values
+$colors:(
+    'service-color': $service-color,
+    'plans-color1': $plans-color1,
+    'plans-color2': $plans-color2,
+    'white': $white,
+    'dot': $dot,
+    't1-color': $t1-color,
+    't2-color': $t2-color,
+    't3-color': $t3-color,
+    't4-color': $t4-color,
+    't5-color': $t5-color,
+    't6-color': $t6-color
+);
+
+//@each Sass loop to generate classes
+@each $name, $color in $colors{
+    .#{$name}{
+        color: $color;
+    }
+
+    .bg-#{$name}{
+        background-color: $color;
+    }
+}
+
+
+

@@ -1,0 +1,22 @@
+footer{
+    overflow-x: hidden;
+    .head{
+        font-size: $font-size-20;
+        color: $t5-color; 
+        padding-top: $padding-3;
+        padding-bottom: $padding-3;
+    }
+    
+    .info{
+        font-size: $font-size-18;
+        color: $t3-color; 
+        padding-top: $padding-3;
+        padding-bottom: $padding-3;
+    }
+
+    .footnote{
+        .yellow-dot{
+            color: $title-dot;
+        }
+    }
+}

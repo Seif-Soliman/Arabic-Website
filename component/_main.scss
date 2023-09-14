@@ -1,0 +1,76 @@
+main{
+  /*   p{
+        font-family: $default-font;
+    } */
+
+    overflow-x: hidden;
+
+    .trip-cards{
+        gap: 5%;
+        justify-content: flex-start;
+        .trip-card{
+            position: relative;
+            scroll-snap-align: start;
+            flex-shrink: 0;
+            width: 70%;
+            img{
+                width: 100%;
+            }
+            .trip-card-txt{
+                position: absolute;
+                padding: $padding-1;
+                bottom: 5%;
+                border-radius: 16px;
+                width: 83%;
+                height: 15%;
+                background: var(--White, #FFF);
+                backdrop-filter: blur(3px);
+                margin-left: 3.5%;
+            }
+        }
+    }
+
+    .service-cards{
+        padding-top: $spacing-between;
+        border-radius: 25px;
+        .service-card{
+            padding: $padding-3;
+        }
+    }
+
+    .plan-cards{
+        gap: 10%;
+        .plan{
+            border-radius: $border-radius;   
+            padding: $padding-3;
+            box-shadow: $box-shadow-2;
+            .checklist{
+                li{
+                    list-style-type: none;
+                    text-align: right;
+                }
+                
+            }
+            .btn{
+                .left-arrow{
+                    padding: 12px;
+                    width: 10%;
+                }
+                h3{
+                    padding: $padding-2;
+                }
+            }
+        }
+        
+    }
+
+    .info{
+        .info-card{
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+  
