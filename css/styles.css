@@ -39,6 +39,14 @@
   font-size: 38px;
 }
 
+.font-size-48 {
+  font-size: 48px;
+}
+
+.font-size-68 {
+  font-size: 68px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -143,8 +151,10 @@
   width: 85%;
   margin: 0 auto;
   justify-content: center;
+  align-items: center;
   border-radius: 15px;
   display: flex;
+  font-family: "Lama_Sans", "Sans Serif";
   box-shadow: 0px 8px 28px 0px rgba(37, 37, 37, 0.1);
 }
 
@@ -152,8 +162,10 @@
   width: 85%;
   margin: 0 auto;
   justify-content: center;
+  align-items: center;
   border-radius: 15px;
   display: flex;
+  font-family: "Lama_Sans", "Sans Serif";
   box-shadow: 0px 8px 28px 0px rgba(37, 37, 37, 0.1);
   width: 100%;
   padding: 6%;
@@ -491,6 +503,14 @@
   width: 100%;
 }
 
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
 .margin-center {
   margin: 0 auto;
 }
@@ -501,6 +521,227 @@
 
 .inline-block {
   display: inline-block;
+}
+
+.overflow-scroll {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.container-desktop {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.container-tablet {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.container-phone {
+  max-width: 425px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.container-full {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.col {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+.col-sm {
+  padding-left: 3.75px;
+  padding-right: 3.75px;
+}
+
+.col-lg {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media (min-width: 425px) {
+  .col-1-phone {
+    width: 8.3333333333%;
+  }
+  .col-2-phone {
+    width: 16.6666666667%;
+  }
+  .col-3-phone {
+    width: 25%;
+  }
+  .col-4-phone {
+    width: 33.3333333333%;
+  }
+  .col-5-phone {
+    width: 41.6666666667%;
+  }
+  .col-6-phone {
+    width: 50%;
+  }
+  .col-7-phone {
+    width: 58.3333333333%;
+  }
+  .col-8-phone {
+    width: 66.6666666667%;
+  }
+  .col-9-phone {
+    width: 75%;
+  }
+  .col-10-phone {
+    width: 83.3333333333%;
+  }
+  .col-11-phone {
+    width: 91.6666666667%;
+  }
+  .col-12-phone {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .col-1-tablet {
+    width: 8.3333333333%;
+  }
+  .col-2-tablet {
+    width: 16.6666666667%;
+  }
+  .col-3-tablet {
+    width: 25%;
+  }
+  .col-4-tablet {
+    width: 33.3333333333%;
+  }
+  .col-5-tablet {
+    width: 41.6666666667%;
+  }
+  .col-6-tablet {
+    width: 50%;
+  }
+  .col-7-tablet {
+    width: 58.3333333333%;
+  }
+  .col-8-tablet {
+    width: 66.6666666667%;
+  }
+  .col-9-tablet {
+    width: 75%;
+  }
+  .col-10-tablet {
+    width: 83.3333333333%;
+  }
+  .col-11-tablet {
+    width: 91.6666666667%;
+  }
+  .col-12-tablet {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .col-1-desktop {
+    width: 8.3333333333%;
+  }
+  .col-2-desktop {
+    width: 16.6666666667%;
+  }
+  .col-3-desktop {
+    width: 25%;
+  }
+  .col-4-desktop {
+    width: 33.3333333333%;
+  }
+  .col-5-desktop {
+    width: 41.6666666667%;
+  }
+  .col-6-desktop {
+    width: 50%;
+  }
+  .col-7-desktop {
+    width: 58.3333333333%;
+  }
+  .col-8-desktop {
+    width: 66.6666666667%;
+  }
+  .col-9-desktop {
+    width: 75%;
+  }
+  .col-10-desktop {
+    width: 83.3333333333%;
+  }
+  .col-11-desktop {
+    width: 91.6666666667%;
+  }
+  .col-12-desktop {
+    width: 100%;
+  }
+}
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
 }
 
 .flex {
@@ -539,47 +780,36 @@
   gap: 5%;
 }
 
-.overflow-scroll {
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-}
-
-header div {
-  position: relative;
-  display: flex;
-}
 header div img {
   width: 100%;
   height: auto;
 }
-header div .navbar {
-  display: flex;
-  position: absolute;
+header div .mobile {
+  display: block;
+}
+header div .desktop {
+  display: none;
+}
+header div .logo-top {
+  width: 45%;
+  top: 4%;
+  right: 0%;
+}
+header div .list {
+  width: 10.5%;
   top: 5%;
   left: 5%;
 }
-header div .navbar .list {
-  width: 15%;
+header div .youtube {
+  display: none;
 }
-header div .navbar h2 {
-  display: inline;
-  margin-left: 171px;
-  font-family: "Lama_Sans", "Sans Serif";
-  color: #FFF;
-}
-header div .navbar h2 .yellow-dot {
-  color: var(--rise-n-shine-600, #FEC430);
+header div nav {
+  display: none;
 }
 header div .overlay {
-  position: absolute;
   top: 20%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 header div .overlay h1, header div .overlay h3 {
-  font-family: "Lama_Sans", "Sans Serif";
-  color: #FFF;
   padding: 12px;
 }
 header div .overlay button {
@@ -602,35 +832,90 @@ header div .overlay .arrow {
   left: 8%;
 }
 header div .scroll-info {
-  position: absolute;
-  bottom: 25px;
+  bottom: 7%;
   left: 2%;
-  display: flex;
-  flex-direction: row;
 }
 header div .scroll-info div {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
   bottom: 10px;
   left: 80%;
   width: 80%;
 }
-header div .scroll-info div h3 {
-  text-align: center;
-  font-family: "Lama_Sans", "Sans Serif";
-  color: #FFF;
-}
 header div .scroll-info div .mouse {
   width: 70%;
-  margin: 0 auto;
   padding: 5px;
 }
 
+@media only screen and (min-width: 1024px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .mobile {
+    display: none !important;
+  }
+  .desktop {
+    display: block !important;
+  }
+  .list {
+    display: none;
+  }
+  .logo-top {
+    width: 15% !important;
+  }
+  nav {
+    display: block !important;
+    top: 7%;
+    left: 16%;
+  }
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    list-style-type: none;
+    flex-grow: 1;
+  }
+  .youtube {
+    display: flex !important;
+    top: 7%;
+    left: 1%;
+  }
+  .youtube p {
+    padding-left: 7.5%;
+  }
+  .overlay h1 {
+    font-size: 68px;
+  }
+  .overlay h3 {
+    font-size: 24px;
+    width: 50%;
+  }
+  .overlay button {
+    width: 20% !important;
+    align-items: center;
+  }
+  .overlay button h3 {
+    font-size: 18px;
+    color: #191919;
+  }
+  .scroll-info {
+    bottom: 10% !important;
+    left: 35% !important;
+  }
+  .scroll-info div {
+    bottom: 10px;
+    left: 80%;
+    width: 85%;
+  }
+  .scroll-info div h3 {
+    font-family: "Lama_Sans", "Sans Serif";
+    font-size: 20px;
+    color: #FFF;
+  }
+  .scroll-info div .mouse {
+    width: 70%;
+    padding: 5px;
+  }
+}
 main {
-  /*   p{
-        font-family: $default-font;
-    } */
   overflow-x: hidden;
 }
 main .trip-cards {
@@ -672,9 +957,14 @@ main .plan-cards .plan {
   padding: 7.5%;
   box-shadow: 10px 10px 0px 0px #000;
 }
+main .plan-cards .plan:hover {
+  background-color: #46368B;
+}
 main .plan-cards .plan .checklist li {
   list-style-type: none;
-  text-align: right;
+}
+main .plan-cards .plan .btn {
+  background-color: transparent;
 }
 main .plan-cards .plan .btn .left-arrow {
   padding: 12px;
@@ -687,6 +977,135 @@ main .info .info-card a {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 1024px) {
+  .heading1 {
+    font-size: 24px;
+    padding-top: 6%;
+  }
+  .heading2 {
+    font-size: 48px;
+    padding-bottom: 6%;
+  }
+  .trip-cards {
+    gap: 2% !important;
+  }
+  .trip-cards .trip-card {
+    width: 28% !important;
+  }
+  .trip-cards .trip-card img {
+    width: 94%;
+  }
+  .trip-cards .trip-card .trip-card-txt .heading {
+    font-size: 24px;
+  }
+  .trip-cards .trip-card .trip-card-txt .subheading {
+    font-size: 18px;
+  }
+  .service-cards {
+    width: 90% !important;
+    flex-direction: row;
+    padding-top: 0 !important;
+  }
+  .service-cards .service-card {
+    padding: 6% !important;
+  }
+  .service-cards .service-card img {
+    width: 77%;
+  }
+  .service-cards .service-card .heading {
+    font-size: 24px;
+  }
+  .service-cards .service-card .subheading {
+    font-size: 18px;
+  }
+  .plan-cards {
+    width: 90% !important;
+    flex-direction: row-reverse;
+    padding-top: 0 !important;
+    gap: 5% !important;
+  }
+  .plan-cards .plan {
+    padding: 3% !important;
+    margin-bottom: 5%;
+  }
+  .plan-cards .plan:hover {
+    background-color: #46368B;
+  }
+  .plan-cards .plan .checklist img {
+    width: 10% !important;
+  }
+  .plan-cards .plan .btn {
+    background-color: transparent;
+  }
+  .reviews {
+    width: 90% !important;
+    flex-direction: row;
+    padding-top: 0 !important;
+    gap: 5% !important;
+  }
+  .reviews .review-card {
+    padding: 3% !important;
+    margin-bottom: 5%;
+  }
+  .reviews .review-card img {
+    width: 30%;
+  }
+  .reviews .review-card span img {
+    width: 10%;
+  }
+  .reviews .review-card .name {
+    font-size: 24px;
+  }
+  .reviews .review-card .text {
+    font-size: 18px;
+  }
+  .contact-us {
+    flex-direction: row-reverse;
+    width: 90%;
+    gap: 5%;
+    margin-bottom: 0;
+    padding-bottom: 6%;
+  }
+  .contact-us .forms label {
+    font-size: 24px;
+  }
+  .contact-us .forms input {
+    font-size: 18px;
+  }
+  .contact-us .forms textarea {
+    font-size: 18px;
+  }
+  .contact-us .forms button {
+    width: 40%;
+    height: 2rem;
+    margin-right: 0;
+  }
+  .contact-us .forms button p {
+    font-size: 18px;
+  }
+  .contact-us .info {
+    padding: 0;
+  }
+  .contact-us .info .info-card {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+    align-items: center;
+  }
+  .contact-us .info .info-card img {
+    width: 25%;
+  }
+  .contact-us .info .info-card .txt {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-us .info .info-card .txt .heading {
+    font-size: 24px;
+  }
+  .contact-us .info .info-card .txt .text {
+    font-size: 18px;
+  }
+}
 footer {
   overflow-x: hidden;
 }
@@ -704,4 +1123,27 @@ footer .info {
 }
 footer .footnote .yellow-dot {
   color: var(--rise-n-shine-600, #FEC430);
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-footer {
+    flex-direction: row-reverse;
+  }
+  .main-footer .desc {
+    width: 25%;
+    padding: 3%;
+  }
+  .main-footer .desc img {
+    width: 30%;
+  }
+  .main-footer .site-map {
+    width: 45%;
+    padding: 3%;
+    flex-wrap: nowrap;
+    gap: 10%;
+  }
+  .social {
+    width: 20%;
+    float: left;
+  }
 }

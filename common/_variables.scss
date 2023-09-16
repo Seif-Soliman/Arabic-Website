@@ -18,6 +18,8 @@ $font-size-24: 24px;
 $font-size-26: 26px;
 $font-size-32: 32px;
 $font-size-38: 38px;
+$font-size-48: 48px;
+$font-size-68: 68px;
 
 // -----------------------------------------------
 // VARIABLES : FONT-COLORS
@@ -52,3 +54,16 @@ $border-radius-2: 40px;
 // VARIABLES : Box-shadow
 $box-shadow: 0px 8px 28px 0px rgba(37, 37, 37, 0.10);
 $box-shadow-2: 10px 10px 0px 0px #000;
+
+
+// -----------------------------------------------
+// VARIABLES : Media Query
+$media-phone: 425px;
+$media-tablet: 768px;
+$media-desktop: 1024px;
+
+// -----------------------------------------------
+// VARIABLES : Gutter
+$grid-gutter:  7.5px;
+$grid-gutter-sm: $grid-gutter/2;
+$grid-gutter-lg: $grid-gutter*2;

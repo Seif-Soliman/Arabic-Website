@@ -20,3 +20,28 @@ footer{
         }
     }
 }
+
+@media only screen and (min-width: 1024px){
+
+    .main-footer{
+        flex-direction: row-reverse;
+        
+        .desc{
+            width: 25%;
+            padding: $padding-1;
+            img{
+                width: 30%;
+            }
+        }
+        .site-map{
+            width: 45%;
+            padding: $padding-1;
+            flex-wrap: nowrap;
+            gap: 10%;
+        }
+    }
+    .social{
+        width: 20%;
+        float: left;
+    }
+}

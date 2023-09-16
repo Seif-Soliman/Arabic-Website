@@ -1,0 +1,127 @@
+//container
+
+@mixin container ($max-width: $media-desktop, $grid-gutter: $grid-gutter ){
+    @if $max-width {
+        max-width: $max-width;
+    }
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $padding-2;
+    padding-right: $padding-2;
+}
+
+.container-desktop{
+    @include container;
+}
+
+.container-tablet{
+    @include container($media-tablet);
+}
+
+.container-phone{
+    @include container($media-phone);
+}
+
+//full width
+.container-full{
+    @include container($max-width: false);
+}
+
+
+//column
+@mixin col($grid-gutter: $grid-gutter){
+    @if $grid-gutter{
+        padding-left: $grid-gutter;
+        padding-right: $grid-gutter;
+    }
+}
+
+.col{
+    @include col;
+}
+
+.col-sm{
+    @include col($grid-gutter: $grid-gutter-sm);
+}
+
+.col-lg{
+    @include col($grid-gutter: $grid-gutter-lg);
+}
+
+$column-count: 12;
+
+@for $i from 1 through $column-count {
+    .col-#{$i} {
+      width: percentage($i / $column-count);
+    }
+}
+
+@media (min-width: $media-phone){
+    @for $i from 1 through $column-count {
+        .col-#{$i}-phone {
+          width: percentage($i / $column-count);
+        }
+    }
+}
+
+@media (min-width: $media-tablet){
+    @for $i from 1 through $column-count {
+        .col-#{$i}-tablet {
+          width: percentage($i / $column-count);
+        }
+    }
+}
+
+@media (min-width: $media-desktop){
+    @for $i from 1 through $column-count {
+        .col-#{$i}-desktop {
+          width: percentage($i / $column-count);
+        }
+    }
+}
+
+//FLOATS
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+//FLEX
+.flex{
+    display: flex;
+  }
+  
+  .flex-column{
+    flex-direction: column;
+  }
+  
+  .flex-column-rev{
+    flex-direction: column-reverse;
+  }
+  
+  .flex-row{
+    flex-direction: row;
+  }
+  
+  .flex-row-rev{
+    flex-direction: row-reverse;
+  }
+  
+  .flex-1{
+    flex: 1;
+  }
+  
+  .wrap{
+    flex-wrap: wrap;
+  }
+  
+  .gap-10{
+    gap: 10%;
+  }
+  
+  .gap-5{
+    gap: 5%;
+  }
